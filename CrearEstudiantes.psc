@@ -88,7 +88,7 @@ Funcion inasistencias = RegistrarInasistencias (listado, notas)
 	Escribir ' '
 	Para i = 0 Hasta 9 Con Paso 1 Hacer
 		Escribir 'Asigne las inasistencias del estudiante: ', listado[i, 1]
-		Escribir 'Ingrese el total de las inasistencias'
+		Escribir ' '
 		Leer inasistencias
 		//Convertimos las inasistencias para poder hacer las operaciones
 		notas[i, 3] = ConvertirANumero(inasistencias)
