@@ -14,7 +14,6 @@ Funcion menu = MostrarMenu
         Escribir '----------------------'
 	Escribir '----MENU PRINCIPAL----'
 	Escribir '----------------------'
-	Escribir ' '
 	Escribir '(1). Registrar estudiantes(10)'
 	Escribir '(2). Asignar 3 notas parciales a cada estudiante'
 	Escribir '(3). Registrar el numero de inasistencias de cada estudiante'
