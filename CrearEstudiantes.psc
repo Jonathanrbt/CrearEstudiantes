@@ -1,5 +1,5 @@
 
-//¡¡¡¡¡¡Para utilizar este codigo necesitas hacer unas configuraciones¡¡¡¡¡¡
+//Â¡Â¡Â¡Â¡Â¡Â¡Para utilizar este codigo necesitas hacer unas configuracionesÂ¡Â¡Â¡Â¡Â¡Â¡
 
 //(1). ir a configurar
 //(2). Seleccionar: Opciones del Lenguaje(perfiles)...
@@ -11,6 +11,10 @@
 
 
 Funcion menu = MostrarMenu
+        Escribir '----------------------'
+	Escribir '----MENU PRINCIPAL----'
+	Escribir '----------------------'
+	Escribir ' '
 	Escribir '(1). Registrar estudiantes(10)'
 	Escribir '(2). Asignar 3 notas parciales a cada estudiante'
 	Escribir '(3). Registrar el numero de inasistencias de cada estudiante'
@@ -78,8 +82,12 @@ Funcion nota = RegistrarNota (listado, notas)
 FinFuncion
 
 Funcion inasistencias = RegistrarInasistencias (listado, notas)
+        Escribir ' '
+	Escribir '-------------------------------------'
+	Escribir 'Ingrese el total de las inasistencias'
+	Escribir '-------------------------------------'
+	Escribir ' '
 	Para i = 0 Hasta 9 Con Paso 1 Hacer
-		Escribir ' '
 		Escribir 'Asigne las inasistencias del estudiante: ', listado[i, 1]
 		Escribir 'Ingrese el total de las inasistencias'
 		Leer inasistencias
@@ -123,8 +131,8 @@ Algoritmo Estudiantes
 		//Cuanto el usuario ingrese un valor fuera de lo establecido no lo deje pasar hasta que ingrese un valor correcto
 		Mientras menu < 1 o (menu > 5 & menu <> 9) Hacer
 			Escribir ' '
-			Escribir 'El número tiene que estar entre 1 y 3'
-			Escribir 'Seleccione una acción válida (9 para salir)'
+			Escribir 'El nÃºmero tiene que estar entre 1 y 3'
+			Escribir 'Seleccione una acciÃ³n vÃ¡lida (9 para salir)'
 			Leer menu
 		FinMientras
 		Segun menu Hacer
